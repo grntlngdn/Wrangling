@@ -5,4 +5,5 @@ h <- read_html(url)
 tab <- h %>% html_nodes("table")
 tab <- tab[[3]] %>% html_table
 tab <- tab %>% setNames(c("state", "population", "total", "murder_rate"))
+save(tab, file = "rdas/murders_raw.rda")
 head(tab)
