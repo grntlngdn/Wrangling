@@ -4,8 +4,5 @@ path <- system.file("extdata", package="dslabs")
 filename <- file.path(path,  "life-expectancy-and-fertility-two-countries-example.csv")
 dest_file <- "data/fertility_vs_life_expectancy.csv"
 
-data <- read_csv(filename)
-
-# copy CSV to be part of this directory/repository
-write.csv(data, file = dest_file, row.names=FALSE)
+file.copy(filename, dest_file)
 
