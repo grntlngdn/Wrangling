@@ -1,5 +1,4 @@
 library(tidyverse)
-
 load("rdas/heights.rda")
 heights %>% ggplot(aes()) +
   geom_
