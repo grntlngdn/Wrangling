@@ -1,7 +1,7 @@
 library(tidyverse)
-filename = "data/murders.csv"
+filename = "data/murders.htm"
 dest_file = "rdas/murders.rda"
-murders = read_csv(filename) %>%
+murders = read_html(filename) %>%
   
 head(murders)
 save(murders, file = dest_file)

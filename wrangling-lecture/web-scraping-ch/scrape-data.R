@@ -8,6 +8,6 @@ murders = read_html(url) %>%
   html_table %>%
   setNames(c("state", "population", "total", "murder_rate"))
 
-dest_file = "rdas/murders.rda"
+dest_file = "data/murders.htm"
 head(murders)
 save(murders, file = dest_file)
